@@ -3,4 +3,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+  
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    width: 390px;
+    border-radius: 40px;
+    background: linear-gradient(150deg, #e66465, #ad132d);
+}
