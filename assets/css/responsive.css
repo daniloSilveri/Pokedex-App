@@ -1,0 +1,12 @@
+@media screen and (max-width: 517px){
+    .content{
+        padding: 0;
+    }
+
+    .pokedex{
+        min-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+        border-radius: 0;
+    }
+}
