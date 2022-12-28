@@ -10,3 +10,9 @@
         border-radius: 0;
     }
 }
+
+@media screen and (max-width: 361px) {
+    .pokemon-id {
+        display: none;
+    }
+}
