@@ -1,3 +1,15 @@
+@media screen and (max-width: 800px){
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-page {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 517px){
     .content{
         padding: 0;
