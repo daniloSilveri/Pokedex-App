@@ -3,27 +3,27 @@
 }
 
 .grass {
-    background-color: #77c850;
+    background-color: #55a82e;
 }
 
 .fire {
-    background-color: #ee7f30;
+    background-color: #d3691d;
 }
 
 .water {
-    background-color: #678fee;
+    background-color: #5b80d6;
 }
 
 .electric {
-    background-color: #f7cf2e;
+    background-color: #dab525;
 }
 
 .ice {
-    background-color: #98d5d7;
+    background-color: #88c7c9;
 }
 
 .ground {
-    background-color: #dfbf69;
+    background-color: #b1964e;
 }
 
 .flying {
@@ -51,7 +51,7 @@
 }
 
 .bug {
-    background-color: #a8b720;
+    background-color: #95a124;
 }
 
 .ghost {
@@ -59,7 +59,7 @@
 }
 
 .steel {
-    background-color: #b9b7cf;
+    background-color: #9a98b3;
 }
 
 .dragon {
@@ -67,5 +67,5 @@
 }
 
 .fairy {
-    background-color: #f9aec7;
+    background-color: #c46d8a;
 }
