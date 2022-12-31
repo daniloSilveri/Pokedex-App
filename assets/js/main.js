@@ -32,4 +32,3 @@ function convertPokemonToLi (pokemon) {
 pokeApi.getPokemons()
     .then((pokemons) => {pokemonList.innerHTML += pokemons.map((pokemons) => convertPokemonToLi(pokemons)).join('');})
     .catch((error) => console.error(error))
-    .finally(() => console.log("Requisição finalizada!"))
