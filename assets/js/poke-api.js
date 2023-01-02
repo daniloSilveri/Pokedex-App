@@ -1,6 +1,7 @@
 
 const pokeApi = {};
 
+/* <-----GETTING POKEMON INFORMATION THROUGH OUR CLASS-----> */
 async function convertPokeApiDetailToPokemon (pokeDetail) {
     const url = `https://pokeapi.co/api/v2/pokemon-species/${pokeDetail.id}/`
     const species = await fetch (url)
@@ -25,12 +26,14 @@ async function convertPokeApiDetailToPokemon (pokeDetail) {
     return pokemon
 };
 
+/* <-----PROPERTY OF THE pokeApi OBJECT THAT CONTAINS THE POKEMON DETAILS CALL-----> */
 pokeApi.getPokemonDetail = (pokemon) => {
     return fetch(pokemon.url)
             .then((response) => response.json())
             .then(convertPokeApiDetailToPokemon);
 };
 
+/* <-----PROPERTY OF THE pokeApi OBJECT THAT CONTAINS THE POKEMON CALL-----> */
 pokeApi.getPokemons = (offset = 0, limit = 151) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
     return fetch(url)

@@ -59,7 +59,7 @@
 .developed-by a:hover {
     font-weight: 400;
     text-decoration: underline;
-    color: rgb(132, 250, 250);
+    color: rgb(0, 255, 234);
 }
   
 .pokedex {
@@ -76,16 +76,4 @@
 
 .pokemons::-webkit-scrollbar {
     display: none;
-    width: 8px;
-}
-
-.pokemons::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #1084aa;
-    background-color: #04394b65;
-    border-radius: 10px;
-}
-  
-.pokemons::-webkit-scrollbar-thumb {
-    background: #1495c0;
-    border-radius: 10px;
 }
