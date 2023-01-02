@@ -29,6 +29,10 @@ function convertPokemonToLi (pokemon) {
         `;
 };
 
-pokeApi.getPokemons()
+function gettingPokemons () {
+    pokeApi.getPokemons()
     .then((pokemons) => {pokemonList.innerHTML += pokemons.map((pokemons) => convertPokemonToLi(pokemons)).join('');})
-    .catch((error) => console.error(error))
+    .catch((error) => console.error(error));
+};
+
+gettingPokemons();
