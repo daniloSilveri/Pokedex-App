@@ -103,29 +103,33 @@
     flex-direction: column;
     list-style: none;
     width: 100%;
-    height: 90%;
-    margin-top: 1.2rem;
+    height: 85%;
+    margin-top: 2rem;
     padding: 0 .6rem;;
     overflow-y: scroll;
 }
 
 .pokemon {
     display: flex;
+    flex-direction: column;
+}
+
+.pokemon-base-info {
+    display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 100px;
     gap: 10px;
-    margin: .5rem 0;
     padding: 0 .9rem;
     border-radius: 1rem;
     cursor: pointer;
     color: #fff;
     background-color: #0d6f9c36;
     backdrop-filter: blur(10px);
-    
+    z-index: 2;
 }
 
-.pokemon img {
+.pokemon-base-info img {
     max-width: 100%;
     height: 70px;
 }
@@ -174,4 +178,84 @@
 .pokemon-id span{
     font-weight: 500;
     font-size: 14px;
+}
+
+.card-pokemon {
+    position: relative;
+    top: -25px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: .25rem 0;
+    padding: 0 .9rem;
+    color: #ffffff00;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #074d6d75;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: ease-in-out 1s all;
+  
+}
+
+.card-pokemon:hover {
+    display: block;
+    height: 330px;
+    color: #fff;
+    transition: ease-in-out 1s all;
+}
+
+.card-pokemon-description {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 35px;
+    padding: 0 .5rem;
+}
+
+.card-pokemon-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: .8rem 0;
+    padding: 1rem .5rem;
+    border-radius: 20px;
+    background-color: #08080821;
+    backdrop-filter: blur(10px);
+}
+
+.card-pokemon-info p {
+    margin: 2%;
+    font-size: 12.5px;
+    font-weight: 400;
+}
+
+.card-pokemon-info span {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(190, 241, 255);
+}
+
+.card-pokemon-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem .5rem;
+    border-radius: 20px;
+    background-color: #08080821;
+    backdrop-filter: blur(10px);
+}
+
+.card-pokemon-stats p {
+    margin: 1%;
+    padding: 1%;
+    font-size: 12.5px;
+    font-weight: 400;
+}
+
+.card-pokemon-stats span {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(121, 241, 175);
 }
