@@ -1,3 +1,4 @@
+/* <-----POKEMON CLASS MODEL-----> */
 class Pokemon {
     pokedexId;
     name;

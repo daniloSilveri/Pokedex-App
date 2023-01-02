@@ -1,6 +1,7 @@
 
 const pokemonList = document.getElementById('pokemonList');
 
+/* <-----DECLARING FUNCTION TO CONVERT API RESULT TO HTML TAG-----> */
 function convertPokemonToLi (pokemon) {
     function formatIdPokedex () {
         let pokeId;
@@ -69,10 +70,12 @@ function convertPokemonToLi (pokemon) {
         `;
 };
 
+/* <-----DECLARING FUNCTION TO CALL POKEMONS-----> */
 function gettingPokemons () {
     pokeApi.getPokemons()
     .then((pokemons) => {pokemonList.innerHTML += pokemons.map((pokemons) => convertPokemonToLi(pokemons)).join('');})
     .catch((error) => console.error(error));
 };
 
+/* <-----SUMMONING FUNCTION TO CALL POKEMONS-----> */
 gettingPokemons();
